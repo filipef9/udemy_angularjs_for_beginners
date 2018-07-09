@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  workspace:
+    image: coursera-angularjs-for-beginners:dev-workspace
+    build: ./
+    ports:
+      - 3000:3000 # browser-sync
+    volumes:
+      - ./../../:/workspace
+    command: tail -f /dev/null
+    
