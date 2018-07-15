@@ -19,7 +19,8 @@ RUN \
     npm -g config set user root &&\
     # install node dev packages
     npm install -g \
-        browser-sync@2.14.0
+        browser-sync@2.14.0 \
+        eslint
 
 # set up the workspace directory
 VOLUME ["/workspace"]
